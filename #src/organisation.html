@@ -1,0 +1,150 @@
+@@include('include_html/header.html')
+<div class="main__wrapper container">
+  <!-- Конец шапки -->
+  <aside class="aside">
+    <div class="aside__top">
+      <h2 class="page-title">Организация мероприятий</h2>
+
+      <div class="hashtag-wrapper">
+        <a href="" class="hashtag">#Лев</a>
+        <a href="" class="hashtag hashtag-orange">#Бонифаций</a>
+      </div>
+
+      <div class="aside-contacts">
+        <span class="aside-contacts__title">Контакт координатора</span>
+
+        <img src="img/team/team-5.jpg" alt="" class="aside-contacts__photo">
+
+        <div class="aside-contacts__top">
+          <span class="aside-contacts__name">Елизавета Константинопольская</span>
+          <span class="aside-contacts__post">Доктор</span>
+        </div>
+
+        <span class="aside-contacts__post">Координатор Калининградского зоопарка</span>
+
+        <div class="aside-contacts__item">
+          <span class="aside-contacts__left">Телефон:</span>
+          <a href="tel:+74012218914" class="aside-contacts__right">+7 (4012) 21-89-14</a>
+        </div>
+
+        <div class="aside-contacts__item">
+          <span class="aside-contacts__left">Email:</span>
+          <a href="mailto:info@kldzoo.ru" class="aside-contacts__right">info@kldzoo.ru</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="aside__bottom">
+      <a href="/" class="back">
+        <span class="back__icon">
+          <svg>
+            <use xlink:href="img/sprite.svg#arrow-left"></use>
+          </svg>
+        </span>
+        Вернуться
+      </a>
+    </div>
+  </aside>
+
+  <div class="main-content">
+    <div class="swiper js-page-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="adaptive-box">
+            <div class="adaptive-item">
+              <img src="img/specialists/specialists-7.jpg" alt="" class="page-slider__img">
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="adaptive-box">
+            <div class="adaptive-item">
+              <img src="img/specialists/specialists-8.jpg" alt="" class="page-slider__img">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-slider__pagination btn-circle__wrapper">
+        <div class="btn-circle__box">
+          <button class="btn-circle__btn js-page-slider-prev">
+            <svg>
+              <use xlink:href="img/sprite.svg#arrow-left"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="btn-circle__box">
+          <button class="btn-circle__btn js-page-slider-next">
+            <svg>
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="page-subtitle">Конференц-зал</h3>
+
+    <p class="page-text">
+      Калининградский зоопарк располагает вместительным конференц-залом, находящимся в здании администрации. Это идеальное место для проведения конференций, презентаций, рабочих встреч, семинаров.<br>
+      Зал оснащен современным профессиональным оборудованием: мультимедийным проектором, большим экраном, аудио конференц-системой. К услугам пользователей синхронный перевод, техническое обеспечение и организация кофе-брейков
+    </p>
+
+    <div class="specifications">
+      <div class="specifications__item">
+        <span class="specifications__name">Площадь:</span>
+        <span class="specifications__value">245 кв.м.</span>
+      </div>
+
+      <div class="specifications__item">
+        <span class="specifications__name">Вместимость:</span>
+        <span class="specifications__value">100 чел.</span>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <div class="dropdown__top">
+        <div class="dropdown__title">Ссылка на руководство:</div>
+      </div>
+
+      <div class="dropdown__content">
+        <div class="docs">
+          <div class="docs__left">
+            <svg>
+              <use xlink:href="img/sprite.svg#doc"></use>
+            </svg>
+          </div>
+
+          <div class="docs__right">
+            <span class="docs__name">Копия устава образовательной организации</span>
+
+            <div class="docs__bottom">
+              <a href="img/poster-1.jpg" target="_blank" class="docs__item">
+                <svg>
+                  <use xlink:href="img/sprite.svg#doc-text"></use>
+                </svg>
+                Открыть
+              </a>
+
+              <a href="img/poster-1.jpg" download="Имя" class="docs__item">
+                <svg>
+                  <use xlink:href="img/sprite.svg#doc-download"></use>
+                </svg>
+                Скачать
+              </a>
+
+              <div class="docs__item docs__type">
+                <svg>
+                  <use xlink:href="img/sprite.svg#gear"></use>
+                </svg>
+                Тип файла: PDF
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  @@include('include_html/footer.html')

@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/micromodal.css">
+  <link rel="stylesheet" href="css/vanilla-calendar.min.css">
+  <link rel="stylesheet" href="css/plyr.css">
+  <link rel="stylesheet" href="css/virtual-select.min.css">
+
+  <link rel="stylesheet" href="css/style.min.css">
+
+  <title>Калининградский зоопарк</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+
+<header class="header">
+  <div class="header__wrapper">
+  <a href="/folder/" class="header__logo">
+    <img src="img/logo.png" alt="">
+  </a>
+
+  <div class="main-menu">
+    <div class="main-menu__top">
+      <a href="/folder/" class="main-menu__logo">
+        <img src="img/logo.png" alt="">
+      </a>
+
+      <button type="button" class="main-menu__close">
+        <svg>
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="header__nav">
+      <ul class="menu">
+        <!-- При скролле пункты меню должны меняться, сами пункты становятся ссылками и пропадают вложенные в них меню, ниже пытаюсь объяснить как это интегрировать по моей логике -->
+        <li class="menu__item">
+          <!-- Если есть вложенное меню начало  -->
+          <span class="menu__link menu__link--span">
+            Посещения и билеты
+            <svg class="menu__link-arrow">
+              <use xlink:href="img/sprite.svg#chevron-circle-down"></use>
+            </svg>
+          </span>
+          <a href="#" class="menu__link menu__link--a">Посещения и билеты</a>
+
+          <div class="submenu">
+            <div class="submenu__left">
+              <span class="submenu__title">Посещения и билеты</span>
+
+              <div class="submenu__wrapper">
+                <ul class="submenu__list">
+                  <li class="submenu__title">
+                    <span class="submenu__title-link">Спланируйте визит</span>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Цены и билеты</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="http://149.154.68.107/folder/contacts.html" class="submenu__link">Как проехать</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="http://149.154.68.107/folder/contacts.html" class="submenu__link">Карта</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Правила поведения</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Расписание кормлений и тренингов</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Пункты питания и сувенирные магазины</a>
+                  </li>
+
+                  <li class="submenu__title">
+                    <a href="" class="submenu__title-link">Дендропарк</a>
+                  </li>
+
+                  <li class="submenu__title">
+                    <a href="" class="submenu__title-link">Музей Зоопарка</a>
+                  </li>
+
+                  <li class="submenu__title">
+                    <a href="" class="submenu__title-link">Аудиогид</a>
+                  </li>
+                </ul>
+
+                <ul class="submenu__list">
+                  <li class="submenu__title">
+                    <span class="submenu__title-link">Для детей</span>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Детские площадки</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Специальные занятия</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Экскурсии</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Квесты</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Выпускные</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">День рождения</a>
+                  </li>
+
+                  <li class="submenu__title">
+                    <a href="" class="submenu__title-link">Частые вопросы</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="event" style="background-image: url(img/content/content-6.jpg);">
+              <div class="event__wrapper">
+                <span class="event__title">День защиты детей</span>
+                <span class="event__subtitle">суббота, воскресенье 15.00</span>
+              </div>
+            </div>
+          </div>
+          <!-- Если есть вложенное меню конец -->
+        </li>
+
+        <li class="menu__item">
+          <!-- Если нет вложенного меню начало  -->
+          <a href="#" class="menu__link">
+            Афиша
+          </a>
+          <!-- Если нет вложенного меню конец  -->
+        </li>
+
+        <li class="menu__item">
+          <span class="menu__link menu__link--span">
+            Животные и парк
+            <svg class="menu__link-arrow">
+              <use xlink:href="img/sprite.svg#chevron-circle-down"></use>
+            </svg>
+          </span>
+          <a href="#" class="menu__link menu__link--a">Животные и парк</a>
+
+          <div class="submenu">
+            <div class="submenu__left">
+              <span class="submenu__title">Посещения и билеты</span>
+
+              <div class="submenu__wrapper">
+                <ul class="submenu__list">
+                  <li class="submenu__title">
+                    <span class="submenu__title-link">Спланируйте визит</span>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Цены и билеты</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Как проехать</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Карта</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Правила поведения</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Расписание кормлений и тренингов</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Пункты питания и сувенирные магазины</a>
+                  </li>
+
+                  <li class="submenu__title">
+                    <a href="" class="submenu__title-link">Дендропарк</a>
+                  </li>
+
+                  <li class="submenu__title">
+                    <a href="" class="submenu__title-link">Музей Зоопарка</a>
+                  </li>
+
+                  <li class="submenu__title">
+                    <a href="" class="submenu__title-link">Аудиогид</a>
+                  </li>
+                </ul>
+
+                <ul class="submenu__list">
+                  <li class="submenu__title">
+                    <span class="submenu__title-link">Для детей</span>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Детские площадки</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Специальные занятия</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Экскурсии</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Квесты</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Выпускные</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">День рождения</a>
+                  </li>
+
+                  <li class="submenu__title">
+                    <a href="" class="submenu__title-link">Частые вопросы</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="event" style="background-image: url(img/content/content-6.jpg);">
+              <div class="event__wrapper">
+                <span class="event__title">День защиты детей</span>
+                <span class="event__subtitle">суббота, воскресенье 15.00</span>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="menu__item">
+          <span class="menu__link menu__link--span">
+            О зоопарке
+            <svg class="menu__link-arrow">
+              <use xlink:href="img/sprite.svg#chevron-circle-down"></use>
+            </svg>
+          </span>
+          <a href="#" class="menu__link menu__link--a">О зоопарке</a>
+
+          <div class="submenu">
+            <div class="submenu__left">
+              <span class="submenu__title">Посещения и билеты</span>
+
+              <div class="submenu__wrapper">
+                <ul class="submenu__list">
+                  <li class="submenu__title">
+                    <span class="submenu__title-link">Спланируйте визит</span>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Цены и билеты</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Как проехать</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Карта</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Правила поведения</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Расписание кормлений и тренингов</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Пункты питания и сувенирные магазины</a>
+                  </li>
+
+                  <li class="submenu__title">
+                    <a href="" class="submenu__title-link">Дендропарк</a>
+                  </li>
+
+                  <li class="submenu__title">
+                    <a href="" class="submenu__title-link">Музей Зоопарка</a>
+                  </li>
+
+                  <li class="submenu__title">
+                    <a href="" class="submenu__title-link">Аудиогид</a>
+                  </li>
+                </ul>
+
+                <ul class="submenu__list">
+                  <li class="submenu__title">
+                    <span class="submenu__title-link">Для детей</span>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Детские площадки</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Специальные занятия</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Экскурсии</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Квесты</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Выпускные</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">День рождения</a>
+                  </li>
+
+                  <li class="submenu__title">
+                    <a href="" class="submenu__title-link">Частые вопросы</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="event" style="background-image: url(img/content/content-6.jpg);">
+              <div class="event__wrapper">
+                <span class="event__title">День защиты детей</span>
+                <span class="event__subtitle">суббота, воскресенье 15.00</span>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="menu__item">
+          <a href="#" class="menu__link">
+            Специалистам
+          </a>
+        </li>
+
+        <li class="menu__item">
+          <span class="menu__link menu__link--span">
+            Поддержать зоопарк
+            <svg class="menu__link-arrow">
+              <use xlink:href="img/sprite.svg#chevron-circle-down"></use>
+            </svg>
+          </span>
+          <a href="#" class="menu__link menu__link--a">Поддержать зоопарк</a>
+
+          <div class="submenu">
+            <div class="submenu__left">
+              <span class="submenu__title">Посещения и билеты</span>
+
+              <div class="submenu__wrapper">
+                <ul class="submenu__list">
+                  <li class="submenu__title">
+                    <span class="submenu__title-link">Спланируйте визит</span>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Цены и билеты</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Как проехать</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Карта</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Правила поведения</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Расписание кормлений и тренингов</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Пункты питания и сувенирные магазины</a>
+                  </li>
+
+                  <li class="submenu__title">
+                    <a href="" class="submenu__title-link">Дендропарк</a>
+                  </li>
+
+                  <li class="submenu__title">
+                    <a href="" class="submenu__title-link">Музей Зоопарка</a>
+                  </li>
+
+                  <li class="submenu__title">
+                    <a href="" class="submenu__title-link">Аудиогид</a>
+                  </li>
+                </ul>
+
+                <ul class="submenu__list">
+                  <li class="submenu__title">
+                    <span class="submenu__title-link">Для детей</span>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Детские площадки</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Специальные занятия</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Экскурсии</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Квесты</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">Выпускные</a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a href="" class="submenu__link">День рождения</a>
+                  </li>
+
+                  <li class="submenu__title">
+                    <a href="" class="submenu__title-link">Частые вопросы</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="event" style="background-image: url(img/content/content-6.jpg);">
+              <div class="event__wrapper">
+                <span class="event__title">День защиты детей</span>
+                <span class="event__subtitle">суббота, воскресенье 15.00</span>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="main-menu__bottom">
+        <a href="tel:+74012218914" class="main-menu__phone">+7 (4012) 21-89-14</a>
+        <a href="mailto:info@kldzoo.ru" class="main-menu__mail">info@kldzoo.ru</a>
+        <span class="main-menu__address">Россия, г. Калининград, проспект Мира, 26</span>
+        <div class="main-menu__social">
+          <a href="" class="main-menu__social-item">
+            <svg>
+              <use xlink:href="img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+
+          <a href="" class="main-menu__social-item">
+            <svg>
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+          </a>
+
+          <a href="" class="main-menu__social-item">
+            <svg>
+              <use xlink:href="img/sprite.svg#ok"></use>
+            </svg>
+          </a>
+
+          <a href="" class="main-menu__social-item">
+            <svg>
+              <use xlink:href="img/sprite.svg#yandex_zen"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="header__right">
+    <div class="lang js-toggle-wrapper">
+      <span class="lang__item js-toggle-trigger">
+        <svg>
+          <use xlink:href="img/sprite.svg#RU"></use>
+        </svg>
+
+        <span class="lang__title">ru</span>
+      </span>
+
+      <div class="lang__drop js-toggle-content">
+        <a href="#" class="lang__item">
+          <svg>
+            <use xlink:href="img/sprite.svg#EN"></use>
+          </svg>
+
+          <span class="lang__title">en</span>
+        </a>
+
+        <a href="#" class="lang__item">
+          <svg>
+            <use xlink:href="img/sprite.svg#DE"></use>
+          </svg>
+
+          <span class="lang__title">de</span>
+        </a>
+
+        <a href="#" class="lang__item">
+          <svg>
+            <use xlink:href="img/sprite.svg#FR"></use>
+          </svg>
+
+          <span class="lang__title">fr</span>
+        </a>
+
+        <a href="#" class="lang__item">
+          <svg>
+            <use xlink:href="img/sprite.svg#PL"></use>
+          </svg>
+
+          <span class="lang__title">pl</span>
+        </a>
+
+        <a href="#" class="lang__item">
+          <svg>
+            <use xlink:href="img/sprite.svg#ES"></use>
+          </svg>
+
+          <span class="lang__title">es</span>
+        </a>
+
+        <a href="#" class="lang__item">
+          <svg>
+            <use xlink:href="img/sprite.svg#CHINA"></use>
+          </svg>
+
+          <span class="lang__title">漢<br>字</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="header-search">
+      <label class="header-search__label">
+        <input type="search" class="header-search__input" placeholder="Поиск" required>
+        <button type="submit" class="header-search__btn">
+          <svg>
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg>
+        </button>
+      </label>
+
+      <ul class="header-search__list">
+        <li class="header-search__item">
+          <a href="" class="header-search__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+            <span class="header-search__result">Площадки с домашними животными</span>
+          </a>
+        </li>
+
+        <li class="header-search__item">
+          <a href="" class="header-search__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+            <span class="header-search__result">Площадки с домашними животными</span>
+          </a>
+        </li>
+
+        <li class="header-search__item">
+          <a href="" class="header-search__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+            <span class="header-search__result">Площадки с домашними животными</span>
+          </a>
+        </li>
+
+        <li class="header-search__item">
+          <a href="" class="header-search__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+            <span class="header-search__result">Площадки с домашними животными</span>
+          </a>
+        </li>
+
+        <li class="header-search__item">
+          <a href="" class="header-search__link">
+            <svg>
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+            <span class="header-search__result">Площадки с домашними животными</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <button type="button" class="header__btn header__btn-search">
+      <svg>
+        <use xlink:href="img/sprite.svg#search-cirle"></use>
+      </svg>
+    </button>
+
+    <button type="button" class="header__btn header__btn-eye">
+      <svg>
+        <use xlink:href="img/sprite.svg#eye"></use>
+      </svg>
+    </button>
+
+    <button type="button" class="header__btn js-burger">
+      <div class="burger">
+        <span class="burger__line"></span>
+      </div>
+    </button>
+  </div>
+</div>
+</header>
+
+<main class="main">
+  <div class="breadcrumbs container">
+    <a href="/" class="breadcrumbs__item">Главная</a>
+    <a href="" class="breadcrumbs__item">О зоопарке</a>
+    <span class="breadcrumbs__item">Факты и цифры</span>
+  </div>
+<div class="main__wrapper container">
+  <!-- Конец шапки -->
+  <aside class="aside">
+    <div class="aside__top">
+      <h2 class="page-title">КАЛИМАНТАНСКИЙ ОРАНГУТАН</h2>
+
+      <div class="name-latin">Pongo pygmaeus pygmaeus Northwest Bornean</div>
+      <div class="name-latin">Orangutan</div>
+
+      <div class="desc">
+        <span class="desc__title">Класс:</span>
+        <p class="desc__text">Млекопитающие</p>
+
+        <span class="desc__title">Отряд:</span>
+        <p class="desc__text">Приматы</p>
+
+        <span class="desc__title">Семейство:</span>
+        <p class="desc__text">Гоминиды</p>
+
+        <span class="desc__title">Охранный статус:</span>
+        <p class="desc__text">Международная книга: CR</p>
+        <p class="desc__text">Региональная книга</p>
+
+        <span class="desc__title">Зоогеографическая зона:</span>
+        <p class="desc__text">Восточная Россия</p>
+
+        <span class="desc__title">Рост:</span>
+        <p class="desc__text">самцы 1,3 -1,7 м</p>
+        <p class="desc__text">самки 1 -1,2 м</p>
+
+        <span class="desc__title">Вес:</span>
+        <p class="desc__text">самцы 50 -90 кг</p>
+        <p class="desc__text">самки 30 - 50 кг</p>
+
+        <span class="desc__title">Продолжительность жизни:</span>
+        <p class="desc__text">в природе – около 50 лет</p>
+        <p class="desc__text">в неволе – до 60 лет</p>
+      </div>
+
+      <a href="" class="btn btn-orange">Показать на карте</a>
+      <button class="btn btn-green" data-micromodal-trigger="support">Стать опекуном</button>
+
+      <div class="hashtag-wrapper">
+        <a href="" class="hashtag hashtag-orange">#Бонифаций</a>
+      </div>
+    </div>
+
+    <div class="aside__bottom">
+      <a href="/" class="back">
+        <span class="back__icon">
+          <svg>
+            <use xlink:href="img/sprite.svg#arrow-left"></use>
+          </svg>
+        </span>
+        Вернуться
+      </a>
+    </div>
+  </aside>
+
+  <div class="main-content">
+    <div class="swiper js-page-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="adaptive-box">
+            <div class="adaptive-item">
+              <img src="img/news/news-detail-4.jpg" alt="" class="page-slider__img">
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="adaptive-box">
+            <div class="adaptive-item">
+              <img src="img/news/news-detail-2.jpg" alt="" class="page-slider__img">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-slider__pagination btn-circle__wrapper">
+        <div class="btn-circle__box">
+          <button class="btn-circle__btn js-page-slider-prev">
+            <svg>
+              <use xlink:href="img/sprite.svg#arrow-left"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="btn-circle__box">
+          <button class="btn-circle__btn js-page-slider-next">
+            <svg>
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-text__title">Где живет в природе:</div>
+    <p class="page-text">
+      Обитает только в одном месте в мире – на индонезийском острове Калимантан (он же Борнео). Его природная среда обитания – влажные дождевые леса.
+    </p>
+
+    <div class="page-text__title">Образ жизни:</div>
+    <p class="page-text">
+      Большую часть времени орангутаны проводят высоко в кронах деревьев, на землю спускаются редко. На они ночь строят себе укрытия-гнёзда и веток и листьев.
+    </p>
+    <p class="page-text">
+      Самцы имеют собственную территорию, которую бдительно охраняют от вторжения конкурентов. При этом на обширном участке одного самца могут располагаться несколько меньших по площади территорий, где живут самки с детёнышами.
+    </p>
+    <p class="page-text">
+      У орангутанов долгое детство. У самки рождается обычно только один детёныш, в очень редких случаях – двойня. Первые 3-4 года жизни детёныши питаются молоком, а живут с матерью, зачастую, до 6-8 летнего возраста и отправляются в самостоятельную жизнь только после появления у самки нового малыша.
+    </p>
+
+    <div class="page-text__title">Что ест:</div>
+    <p class="page-text">
+      В природе питаются преимущественно плодами, листьями и цветами деревьев, однако с охотой разнообразят свой рацион белковой пищей – различными беспозвоночными, птичьими яйцами.
+    </p>
+    <p class="page-text">
+      В зоопарке в рацион орангутанов входят в том числе свежие ветки с листьями (как и в природе), ягоды, сельдерей, болгарский перец (витамины и микроэлементы), орехи и авокадо (полезные жиры), а также перепелиные яйца и варёная куриная грудка (белок).
+    </p>
+
+    <div class="page-text__title">Угрозы:</div>
+    <p class="page-text">
+      Невысокие темпы размножения вкупе с другими угрозами (браконьерским отловом и массивной вырубкой тропических лесов) привели к тому, что популяция орангутанов за последние годы катастрофически сократилась, и сегодня вид находится на грани полного исчезновения.
+    </p>
+
+    <div class="page-text__title">А как у нас?</div>
+    <p class="page-text">
+      Несмотря на своё тропическое происхождение, в нашем зоопарке орангутаны вполне адаптировались к прохладному прибалтийскому климату. Они очень любят свои уличные вольеры и гуляют до самых холодов. Даже зимой, если температура держится выше ноля и светит солнце, наши орангутаны отправляются на прогулку, для комфорта завернувшись в одеяло. Чтобы животные не скучали, в зоопарке у них много игрушек и элементов обогащения среды – работники делают для них настоящие головоломки, а призом за решение станет угощение. Для контроля здоровья обезьян регулярно взвешивают и проводят с ними медицинские тренинги – учат открывать рот по команде, принимать лекарства и даже терпеть неприятные процедуры вроде уколов и УЗИ.
+    </p>
+
+    <h3 class="page-subtitle">Охранный статус</h3>
+
+    <div class="status">
+      <div class="status__item status__item-gray">
+        <svg>
+          <use xlink:href="img/sprite.svg#red-list"></use>
+        </svg>
+
+        <div class="status__top">
+          <div class="status__text">Неоценённые</div>
+        </div>
+        <div class="status__bottom">NE</div>
+      </div>
+
+      <div class="status__item status__item-gray">
+        <svg>
+          <use xlink:href="img/sprite.svg#red-list"></use>
+        </svg>
+
+        <div class="status__top">
+          <div class="status__text">Недостаток данных</div>
+        </div>
+        <div class="status__bottom">DD</div>
+      </div>
+
+      <div class="status__item">
+        <svg>
+          <use xlink:href="img/sprite.svg#red-list"></use>
+        </svg>
+
+        <div class="status__top">
+          <div class="status__text">Пониженная уязвимость</div>
+        </div>
+        <div class="status__bottom">LC</div>
+      </div>
+
+      <div class="status__item">
+        <svg>
+          <use xlink:href="img/sprite.svg#red-list"></use>
+        </svg>
+
+        <div class="status__top">
+          <div class="status__text">Находящиеся в состоянии, близком&nbsp;к&nbsp;угрожаемому</div>
+        </div>
+        <div class="status__bottom">NT</div>
+      </div>
+
+      <div class="status__item">
+        <svg>
+          <use xlink:href="img/sprite.svg#red-list"></use>
+        </svg>
+
+        <div class="status__top">
+          <div class="status__text">Уязвимые</div>
+        </div>
+        <div class="status__bottom">VU</div>
+      </div>
+
+      <div class="status__item">
+        <svg>
+          <use xlink:href="img/sprite.svg#red-list"></use>
+        </svg>
+
+        <div class="status__top">
+          <div class="status__text">Исчезающие</div>
+        </div>
+        <div class="status__bottom">EN</div>
+      </div>
+      <!--  status__item-red -->
+      <div class="status__item">
+        <svg>
+          <use xlink:href="img/sprite.svg#red-list"></use>
+        </svg>
+
+        <div class="status__top">
+          <div class="status__text">Находящиеся на грани исчезновения</div>
+        </div>
+        <div class="status__bottom">CR</div>
+      </div>
+
+      <div class="status__item">
+        <svg>
+          <use xlink:href="img/sprite.svg#red-list"></use>
+        </svg>
+
+        <div class="status__top">
+          <div class="status__text">Исчезнувшие в природе</div>
+        </div>
+        <div class="status__bottom">EW</div>
+      </div>
+
+      <div class="status__item status__item-black">
+        <svg>
+          <use xlink:href="img/sprite.svg#red-list"></use>
+        </svg>
+
+        <div class="status__top">
+          <div class="status__text">Исчезнувшие</div>
+        </div>
+        <div class="status__bottom">EX</div>
+      </div>
+    </div>
+
+    <a href="/folder/animals.html" class="page-subtitle">Посмотреть всех</a>
+
+    <div class="animals-slider">
+      <div class="swiper js-animals-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide news__item">
+            <div class="news__top">
+              <img src="img/content/content-37.jpg" alt="" class="news__img">
+            </div>
+
+            <div class="news__middle">
+              <div class="animals-title">Антон</div>
+
+              <div class="animals-desc">
+                <div class="animals-desc__left">Пол</div>
+                <div class="animals-desc__right">Мужской</div>
+              </div>
+              <div class="animals-desc">
+                <div class="animals-desc__left">Дата рождения</div>
+                <div class="animals-desc__right">2008</div>
+              </div>
+              <div class="animals-desc">
+                <div class="animals-desc__left">Место рождения</div>
+                <div class="animals-desc__right">Ольборг</div>
+              </div>
+            </div>
+
+            <div class="news__bottom">
+              <a href="" class="btn btn-transparent">Побробнее</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide news__item">
+            <div class="news__top">
+              <img src="img/content/content-38.jpg" alt="" class="news__img">
+            </div>
+
+            <div class="news__middle">
+              <div class="animals-title">Нонна</div>
+
+              <div class="animals-desc">
+                <div class="animals-desc__left">Пол</div>
+                <div class="animals-desc__right">Мужской</div>
+              </div>
+              <div class="animals-desc">
+                <div class="animals-desc__left">Дата рождения</div>
+                <div class="animals-desc__right">1995</div>
+              </div>
+              <div class="animals-desc">
+                <div class="animals-desc__left">Место рождения</div>
+                <div class="animals-desc__right">Московкский зоопарк</div>
+              </div>
+            </div>
+
+            <div class="news__bottom">
+              <a href="" class="btn btn-transparent">Побробнее</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide news__item">
+            <div class="news__top">
+              <img src="img/content/content-37.jpg" alt="" class="news__img">
+            </div>
+
+            <div class="news__middle">
+              <div class="animals-title">Антон</div>
+
+              <div class="animals-desc">
+                <div class="animals-desc__left">Пол</div>
+                <div class="animals-desc__right">Мужской</div>
+              </div>
+              <div class="animals-desc">
+                <div class="animals-desc__left">Дата рождения</div>
+                <div class="animals-desc__right">2008</div>
+              </div>
+              <div class="animals-desc">
+                <div class="animals-desc__left">Место рождения</div>
+                <div class="animals-desc__right">Ольборг</div>
+              </div>
+            </div>
+
+            <div class="news__bottom">
+              <a href="" class="btn btn-transparent">Побробнее</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide news__item">
+            <div class="news__top">
+              <img src="img/content/content-38.jpg" alt="" class="news__img">
+            </div>
+
+            <div class="news__middle">
+              <div class="animals-title">Нонна</div>
+
+              <div class="animals-desc">
+                <div class="animals-desc__left">Пол</div>
+                <div class="animals-desc__right">Мужской</div>
+              </div>
+              <div class="animals-desc">
+                <div class="animals-desc__left">Дата рождения</div>
+                <div class="animals-desc__right">1995</div>
+              </div>
+              <div class="animals-desc">
+                <div class="animals-desc__left">Место рождения</div>
+                <div class="animals-desc__right">Московкский зоопарк</div>
+              </div>
+            </div>
+
+            <div class="news__bottom">
+              <a href="" class="btn btn-transparent">Побробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="animals-slider-btn animals-next js-animals-next">
+        <svg>
+          <use xlink:href="img/sprite.svg#arrow-right"></use>
+        </svg>
+      </button>
+
+      <button class="animals-slider-btn animals-prev js-animals-prev">
+        <svg>
+          <use xlink:href="img/sprite.svg#arrow-left"></use>
+        </svg>
+      </button>
+    </div>
+
+    <h3 class="page-subtitle">Расписание кормлений и тренингов</h3>
+
+    <div class="animals-schedule schedule__wrapper">
+      <div class="schedule__item">
+        <img src="img/content/content-39.jpg" alt="" class="schedule__img">
+
+        <div class="schedule__box">
+          <span class="schedule__title">Кормление тигров</span>
+          <div class="schedule__line">
+            <span class="schedule__left">Место провеления:</span>
+            <span class="schedule__right schedule__right-green">Конференц-зал</span>
+          </div>
+          <div class="schedule__line">
+            <span class="schedule__left">Время начала</span>
+            <span class="schedule__right">15.00 - 16.00</span>
+          </div>
+          <div class="schedule__line">
+            <span class="schedule__left">Продолжительность</span>
+            <span class="schedule__right">20 минут</span>
+          </div>
+          <p class="schedule__description">Описание</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="page-subtitle">Экспозиции</h3>
+
+    <div class="expositions-schedule schedule__wrapper">
+      <div class="schedule__item">
+        <img src="img/content/content-40.jpg" alt="" class="schedule__img">
+
+        <div class="schedule__box">
+          <span class="schedule__title">Индивидуальные экскурсии</span>
+          <p class="schedule__text">В своём стремлении улучшить пользовательский опыт мы упускаем, что предприниматели в сети интернет будут ассоциативно распределены по отраслям. В целом, конечно, семантический разбор внешних противодействий играет важную роль в формировании укрепления моральных ценностей.</p>
+          <a href="" class="btn btn-transparent">Перейти</a>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="page-subtitle">Специалист по уходу за животными</h3>
+
+    <div class="person__slider">
+      <div class="swiper js-person-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide person__slide">
+            <div class="person__left">
+              <div class="person__img" style="background-image: url(img/team/team-1.jpg);"></div>
+            </div>
+
+            <div class="person__right">
+              <span class="person__name">Сотрудник Сотрудник</span>
+              <span class="person__description">Должность сотрудника</span>
+              <p class="person__text">В своём стремлении улучшить пользовательский опыт мы упускаем, что предприниматели в сети интернет будут ассоциативно распределены по отраслям. В целом, конечно, семантический разбор внешних противодействий играет важную роль в формировании укрепления моральных ценностей. В своём стремлении улучшить пользовательский опыт мы упускаем, что предприниматели в сети интернет будут ассоциативно распределены по отраслям. В целом, конечно, семантический разбор внешних противодействий играет важную роль в формировании укрепления моральных ценностей.</p>
+              <a href="/folder/team-detail.html" class="person__link">Читать далее</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide person__slide">
+            <div class="person__left">
+              <div class="person__img" style="background-image: url(img/team/team-2.jpg);"></div>
+            </div>
+
+            <div class="person__right">
+              <span class="person__name">Сотрудник Сотрудник</span>
+              <span class="person__description">Должность сотрудника</span>
+              <p class="person__text">В своём стремлении улучшить пользовательский опыт мы упускаем, что предприниматели в сети интернет будут ассоциативно распределены по отраслям. В целом, конечно, семантический разбор внешних противодействий играет важную роль в формировании укрепления моральных ценностей. В своём стремлении улучшить пользовательский опыт мы упускаем, что предприниматели в сети интернет будут ассоциативно распределены по отраслям. В целом, конечно, семантический разбор внешних противодействий играет важную роль в формировании укрепления моральных ценностей.</p>
+              <a href="/folder/team-detail.html" class="person__link">Читать далее</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide person__slide">
+            <div class="person__left">
+              <div class="person__img" style="background-image: url(img/team/team-3.jpg);"></div>
+            </div>
+
+            <div class="person__right">
+              <span class="person__name">Сотрудник Сотрудник</span>
+              <span class="person__description">Должность сотрудника</span>
+              <p class="person__text">В своём стремлении улучшить пользовательский опыт мы упускаем, что предприниматели в сети интернет будут ассоциативно распределены по отраслям. В целом, конечно, семантический разбор внешних противодействий играет важную роль в формировании укрепления моральных ценностей. В своём стремлении улучшить пользовательский опыт мы упускаем, что предприниматели в сети интернет будут ассоциативно распределены по отраслям. В целом, конечно, семантический разбор внешних противодействий играет важную роль в формировании укрепления моральных ценностей.</p>
+              <a href="/folder/team-detail.html" class="person__link">Читать далее</a>
+            </div>
+          </div>
+        </div>
+
+        <button class="animals-slider-btn animals-next js-person-next">
+          <svg>
+            <use xlink:href="img/sprite.svg#arrow-right"></use>
+          </svg>
+        </button>
+
+        <button class="animals-slider-btn animals-prev js-person-prev">
+          <svg>
+            <use xlink:href="img/sprite.svg#arrow-left"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <h3 class="page-subtitle">Опекуны</h3>
+
+    <div class="person__wrapper">
+      <a href="/folder/team-detail.html" class="person">
+        <div class="person__top">
+          <div class="person__photo" style="background-image: url(img/team/team-1.jpg);"></div>
+        </div>
+        <div class="person__bottom">
+          <span class="person__name">Сотрудник Сотрудник</span>
+        </div>
+      </a>
+
+      <a href="/folder/team-detail.html" class="person">
+        <div class="person__top">
+          <div class="person__photo" style="background-image: url(img/team/team-2.jpg);"></div>
+        </div>
+        <div class="person__bottom">
+          <span class="person__name">Сотрудник Сотрудник</span>
+        </div>
+      </a>
+
+      <a href="/folder/team-detail.html" class="person">
+        <div class="person__top">
+          <div class="person__photo" style="background-image: url(img/team/team-3.jpg);"></div>
+        </div>
+        <div class="person__bottom">
+          <span class="person__name">Сотрудник Сотрудник</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <h2 class="title">Новости</h2>
+
+  <div class="news__wrapper news__wrapper-bottom">
+    <div class="news__item news__item-25">
+      <a href="/folder/news-detail.html" class="news__top">
+        <img src="img/content/content-13.jpg" alt="" class="news__img">
+      </a>
+
+      <div class="news__middle">
+        <span class="news__date">16 и 17 апреля</span>
+        <a href="/folder/news-detail.html" class="news__title">Зоопарк работает на час дольше</a>
+        <p class="news__text">17 апреля в 11.00 Калининградский зоопарк приглашает на авторскую экскурсию «Зообуфет»</p>
+      </div>
+
+      <div class="hashtag-wrapper">
+        <a href="" class="hashtag">#Время работы</a>
+        <a href="" class="hashtag hashtag-orange">#Зообуфет</a>
+      </div>
+    </div>
+
+    <div class="news__item news__item-25">
+      <a href="/folder/news-detail.html" class="news__top">
+        <img src="img/content/content-14.jpg" alt="" class="news__img">
+      </a>
+
+      <div class="news__middle">
+        <span class="news__date">16 и 17 апреля</span>
+        <a href="/folder/news-detail.html" class="news__title">Возобновляем индивидуальные экскурсии</a>
+        <p class="news__text">Два из Светлогорска, один — с Косы. В первые выходные апреля на счёту сотрудников зоопарка три </p>
+      </div>
+
+      <div class="hashtag-wrapper">
+        <a href="" class="hashtag">#Время работы</a>
+        <a href="" class="hashtag hashtag-orange">#Зообуфет</a>
+      </div>
+    </div>
+
+    <div class="news__item">
+      <a href="/folder/news-detail.html" class="news__top">
+        <img src="img/content/content-15.jpg" alt="" class="news__img">
+      </a>
+
+      <div class="news__middle">
+        <span class="news__date">16 и 17 апреля</span>
+        <a href="/folder/news-detail.html" class="news__title">Легендарному директору зоопарка Людмиле Ворониной 85!</a>
+        <p class="news__text">16 и 17 апреля Калининградский зоопарк объявляет весеннюю охоту на яйца! Найди…</p>
+      </div>
+
+      <div class="hashtag-wrapper">
+        <a href="" class="hashtag">#Время работы</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Заявка принята -->
+  <div class="modal micromodal-slide" id="done" aria-hidden="false">
+    <div class="modal__overlay" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <div class="modal__wrapper  modal__container-small">
+          <button class="modal__close" data-micromodal-close>
+            <svg data-micromodal-close>
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+
+          <div class="modal-title">Ваша заявка принята, в ближайшее время с вами свяжется сотрудник зоопарка</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Принять участие -->
+  <div class="modal micromodal-slide" id="support" aria-hidden="false">
+    <div class="modal__overlay" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <div class="modal__wrapper  modal__container-small">
+          <button class="modal__close" data-micromodal-close>
+            <svg data-micromodal-close>
+              <use xlink:href="img/sprite.svg#close"></use>
+            </svg>
+          </button>
+
+          <form action="">
+            <div class="modal-title">Заявка на участие в программе опеки</div>
+
+            <input type="text" class="input" placeholder="ФИО *" required>
+            <input type="tel" class="input" placeholder="Телефон *" value="" required>
+            <input type="email" class="input" placeholder="Email *" required>
+
+            <select name="year" class="filter__select">
+              <option value="1" class="filter__option" selected>Животное, которое вы хотите опекать</option>
+              <option value="2" class="filter__option">1</option>
+              <option value="3" class="filter__option">2</option>
+              <option value="4" class="filter__option">3</option>
+            </select>
+
+            <select name="year" class="filter__select">
+              <option value="1" class="filter__option" selected>Предпочтительная сумма пожертвования</option>
+              <option value="2" class="filter__option">1</option>
+              <option value="3" class="filter__option">2</option>
+              <option value="4" class="filter__option">3</option>
+            </select>
+
+            <textarea class="input" placeholder="Сообщение"></textarea>
+
+            <label class="poli">
+              <input type="checkbox" class="poli__input" required>
+              <div class="poli__icon">
+                <svg>
+                  <use xlink:href="img/sprite.svg#check"></use>
+                </svg>
+              </div>
+              <div class="poli__text">Я прочитал и принимаю условия <a href="" class="poli__link">Соглашения об обработке персональных данных</a></div>
+            </label>
+
+            <label class="poli">
+              <input type="checkbox" class="poli__input">
+              <div class="poli__icon">
+                <svg>
+                  <use xlink:href="img/sprite.svg#check"></use>
+                </svg>
+              </div>
+              <div class="poli__text">Я согласен получать рассылку по теме “Программа опеки” по E-mail</div>
+            </label>
+
+            <button type="submit" class="btn btn-green">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Начало футера -->
+</div>
+
+<section class="container bottom">
+  <div class="box app">
+    <img src="img/mob-app.png" alt="" class="app__img">
+    <div class="app__inner">
+      <span class="app__title">Мобильное приложение</span>
+      <p class="app__text">Покупайте электронные билеты онлайн и не стойте в очереди. Стройте свои собственные маршруты или используйте готовые.</p>
+      <div class="app__bottom">
+        <a href="#" class="app__link">
+          <img src="img/app-1.png" alt="">
+        </a>
+        <a href="#" class="app__link">
+          <img src="img/app-2.png" alt="">
+        </a>
+        <a href="#" class="app__link">
+          <img src="img/app-3.png" alt="">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="box subscription">
+    <span class="box__title">Оставайтесь в курсе событий</span>
+    <span class="box__text">Подпишитесь на специальные обновления и акции</span>
+    <form for="" class="subscription__label">
+      <input type="email" class="subscription__input" placeholder="Email *" required>
+      <button type="submit" class="subscription__btn">
+        <svg>
+          <use xlink:href="img/sprite.svg#arrow-right"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
+</section>
+</main>
+</div>
+
+<footer class="footer">
+  <div class="footer__container">
+    <div class="slider-arrows">
+      <button type="button" class="slider-arrow partners__arrow js-partners-prev">
+        <svg>
+          <use xlink:href="img/sprite.svg#arrow-left"></use>
+        </svg>
+      </button>
+      <button type="button" class="slider-arrow partners__arrow js-partners-next">
+        <svg>
+          <use xlink:href="img/sprite.svg#arrow-right"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="swiper partners">
+      <div class="swiper-wrapper">
+        <a class="swiper-slide partners__slide">
+          <img src="img/partners/partners-1.jpg" class="partners__img" alt="">
+        </a>
+
+        <a class="swiper-slide partners__slide">
+          <img src="img/partners/partners-2.jpg" class="partners__img" alt="">
+        </a>
+
+        <a class="swiper-slide partners__slide">
+          <img src="img/partners/partners-3.jpg" class="partners__img" alt="">
+        </a>
+
+        <a class="swiper-slide partners__slide">
+          <img src="img/partners/partners-4.jpg" class="partners__img" alt="">
+        </a>
+
+        <a class="swiper-slide partners__slide">
+          <img src="img/partners/partners-5.jpg" class="partners__img" alt="">
+        </a>
+
+        <a class="swiper-slide partners__slide">
+          <img src="img/partners/partners-6.jpg" class="partners__img" alt="">
+        </a>
+
+        <a class="swiper-slide partners__slide">
+          <img src="img/partners/partners-7.jpg" class="partners__img" alt="">
+        </a>
+
+        <a class="swiper-slide partners__slide">
+          <img src="img/partners/partners-8.jpg" class="partners__img" alt="">
+        </a>
+
+        <a class="swiper-slide partners__slide">
+          <img src="img/partners/partners-9.jpg" class="partners__img" alt="">
+        </a>
+
+        <a class="swiper-slide partners__slide">
+          <img src="img/partners/partners-10.jpg" class="partners__img" alt="">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer__wrapper">
+
+      <div class="footer__col">
+        <div class="footer__col-item">
+          <div class="footer__title">
+            Посещение и билеты
+            <svg>
+              <use xlink:href="img/sprite.svg#chevron-circle-down"></use>
+            </svg>
+          </div>
+
+          <div class="footer__drop">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <span class="footer__link">Спланируйте визит</span>
+                <ul class="footer__list-second">
+                  <li class="footer__item">
+                    <a class="footer__link" href="">График работы и карта проезда, правила посещения, карта зоопарка</a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a class="footer__link" href="">FAQ</a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a class="footer__link" href="">Стоимость билетов и льготы</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="">Расписание кормлений и тренингов</a>
+              </li>
+
+              <li class="footer__item">
+                <span class="footer__link">Для детей</span>
+                <ul class="footer__list-third">
+                  <li class="footer__item">
+                    <a class="footer__link" href="">Полоса препятствий</a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a class="footer__link" href="">Прыг-скок</a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a class="footer__link" href="">Экскурсии</a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a class="footer__link" href="">Квесты</a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a class="footer__link" href="">День Рождения</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="">Аудиогиды и мобильное приложение</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="">Пункты питания и сувенирные магазины</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="">Дендропарк</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="">Музей зоопарка</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <div class="footer__col-item">
+          <div class="footer__title">
+            Афиша/События
+            <svg>
+              <use xlink:href="img/sprite.svg#chevron-circle-down"></use>
+            </svg>
+          </div>
+
+          <div class="footer__drop">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="" class="footer__link">Календарь событий</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="" class="footer__link">Расписание кормлений и тренингов</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="" class="footer__link">Экскурсии и программы по записи</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="" class="footer__link">Концерты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__col-item">
+          <div class="footer__title">
+            Животные и Парк
+            <svg>
+              <use xlink:href="img/sprite.svg#chevron-circle-down"></use>
+            </svg>
+          </div>
+
+          <div class="footer__drop">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="" class="footer__link">Животные и экспозиции</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="" class="footer__link">Дендропарк</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="" class="footer__link">Свободноживущие животные</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="" class="footer__link">Благополучие и медицинские тренинги</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="" class="footer__link">Новое в зоопарке</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <div class="footer__col-item">
+          <div class="footer__title">
+            О зоопарке
+            <svg>
+              <use xlink:href="img/sprite.svg#chevron-circle-down"></use>
+            </svg>
+          </div>
+
+          <div class="footer__drop">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="">Факты и цифры</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="">Новости</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="">Команда и контакты</a>
+              </li>
+
+              <li class="footer__item">
+                <span class="footer__link">Деятельность</span>
+                <ul class="footer__list-second">
+                  <li class="footer__item">
+                    <a class="footer__link" href="">Миссия современных зоопарков и миссия КЗ</a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a class="footer__link" href="">Наши награды</a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a class="footer__link" href="">Зелёная политика</a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a class="footer__link" href="">Стратегические планы развития</a>
+                  </li>
+
+                  <li class="footer__item">
+                    <a class="footer__link" href="">Проектная деятельность</a>
+
+                    <ul class="footer__list-third">
+                      <li class="footer__item">
+                        <a class="footer__link" href="">Приграничное сотрудничество</a>
+                      </li>
+
+                      <li class="footer__item">
+                        <a class="footer__link" href="">Фонд Потанина</a>
+                      </li>
+
+                      <li class="footer__item">
+                        <a class="footer__link" href="">Региональные конкурсы</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="">История зоопарка</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="">Вакансии</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="">Официальная информация</a>
+              </li>
+
+              <li class="footer__item">
+                <a class="footer__link" href="">Членство в ассоциациях</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <div class="footer__col-item">
+          <div class="footer__title">
+            Специалистам
+            <svg>
+              <use xlink:href="img/sprite.svg#chevron-circle-down"></use>
+            </svg>
+          </div>
+
+          <div class="footer__drop">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="" class="footer__link">Библиотека</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="" class="footer__link">Конференции и семинары</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="" class="footer__link">Статьи и переводы</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="" class="footer__link">Организация мероприятий</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="" class="footer__link">Тренинги и обогащение среды</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__col-item">
+          <div class="footer__title">
+            Поддержать зоопарк
+            <svg>
+              <use xlink:href="img/sprite.svg#chevron-circle-down"></use>
+            </svg>
+          </div>
+
+          <div class="footer__drop">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="" class="footer__link">Программа опеки</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="" class="footer__link">Волонтеры</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="" class="footer__link">Спонсоры</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="" class="footer__title">Предпринимателям</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="app__bottom">
+        <a href="#" class="app__link">
+          <img src="img/app-1-big.png" alt="">
+        </a>
+        <a href="#" class="app__link">
+          <img src="img/app-2-big.png" alt="">
+        </a>
+        <a href="#" class="app__link">
+          <img src="img/app-3-big.png" alt="">
+        </a>
+      </div>
+
+      <div class="footer-bottom__box">
+        <a href="tel:+74012218914" class="footer-bottom__phone">+7 (4012) 21-89-14</a>
+        <a href="mailto:info@kldzoo.ru" class="footer-bottom__mail">info@kldzoo.ru</a>
+      </div>
+
+      <span class="footer-bottom__address">Россия, г. Калининград, проспект Мира, 26</span>
+
+      <div class="social">
+        <a href="" class="social__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+        </a>
+
+        <a href="" class="social__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#telegram"></use>
+          </svg>
+        </a>
+
+        <a href="" class="social__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#ok"></use>
+          </svg>
+        </a>
+
+        <a href="" class="social__link">
+          <svg>
+            <use xlink:href="img/sprite.svg#yandex_zen"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/micromodal.min.js"></script>
+<script src="js/vanilla-calendar.min.js"></script>
+<script src="js/plyr.min.js"></script>
+<script src="js/inputmask.min.js"></script>
+<script src="js/virtual-select.min.js"></script>
+
+<script src="js/script.js"></script>
+</body>
+
+</html>

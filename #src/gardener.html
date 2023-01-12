@@ -1,0 +1,224 @@
+@@include('include_html/header.html')
+<div class="main__wrapper container">
+  <!-- Конец шапки -->
+  <aside class="aside">
+    <div class="aside__top">
+      <h2 class="page-title">Будни садовника</h2>
+
+      <div class="hashtag-wrapper">
+        <a href="" class="hashtag">#Время работы</a>
+        <a href="" class="hashtag hashtag-orange">#Зообуфет</a>
+        <a href="" class="hashtag hashtag-red">#Экскурсии</a>
+      </div>
+    </div>
+  </aside>
+
+  <div class="main-content">
+    <p class="page-text">У зоопарка здорового человека основная функция — сохранение биоразнообразия. Идея в создании распределённого по всей планете банка животных. Когда кто-то в дикой природе оказывается под угрозой, можно вытащить вид за счёт потомков зоопарковой популяции. Для этого есть программы генетического учёта животных и кросс-зоопаркового скрещивания. Примеры восстановления популяций уже были (например, зоопарки всего мира объединились, чтобы вернуть лошадь Пржевальского).</p>
+
+    <div class="swiper js-page-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="adaptive-box">
+            <div class="adaptive-item">
+              <img src="img/flowers/flowers-11.jpg" alt="" class="page-slider__img">
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="adaptive-box">
+            <div class="adaptive-item">
+              <img src="img/projects/projects-2.jpg" alt="" class="page-slider__img">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-slider__pagination btn-circle__wrapper">
+        <div class="btn-circle__box">
+          <button class="btn-circle__btn js-page-slider-prev">
+            <svg>
+              <use xlink:href="img/sprite.svg#arrow-left"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="btn-circle__box">
+          <button class="btn-circle__btn js-page-slider-next">
+            <svg>
+              <use xlink:href="img/sprite.svg#arrow-right"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <p class="page-text">Если бы функция была только одна, то зоопарковские коллекции составлялись бы исключительно из краснокнижных зверей и хранились бы далеко не на огромной территории в центре города. Но вторая функция — это экопросвет. Зоопарк в идеале должен быть точкой трансляции мыслей про биологию и экологию.</p>
+    <p class="page-text">Ещё две функции — научная (изучение животных в контролируемых условиях) и развлекательная (для приматов). Каждая из задач отдельно решается эффективнее другими способами, но именно их сочетание плюс исторические предпосылки рождают некий усреднённый оптимум — зоопарк. Так что давайте поговорим про зоопарк здорового человека. Для примера возьмём зоопарк Калининграда, поскольку он очень открыт в плане информации. Что такое «открыт» сейчас тоже расскажу.</p>
+
+    <div class="content-tabs js-tab-wrapper">
+      <div class="content-tabs__btns js-tab-btns">
+        <button type="button" class="btn btn-transparent js-tab-btn active" data-tab="video">Видео</button>
+        <button type="button" class="btn btn-transparent js-tab-btn" data-tab="photo">Фото</button>
+      </div>
+
+      <div class="content-tabs__wrapper">
+        <div class="content-tabs__item js-tabs-item active" data-tab="video">
+          <div class="swiper js-slider-desc">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="adaptive-box">
+                  <div class="adaptive-item">
+                    <div class="player">
+                      <iframe src="https://www.youtube.com/watch?rel=0&app=desktop&v=oGRmEKLnFIs" data-poster="img/news/news-detail-2.jpg" allowfullscreen allowtransparency allow="autoplay"></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="adaptive-box">
+                  <div class="adaptive-item">
+                    <video class="player" playsinline controls data-poster="img/projects/projects-1.jpg">
+                      <source src="video/Видео природа.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-tabs__pagination btn-circle__wrapper">
+              <div class="btn-circle__box">
+                <button class="btn-circle__btn js-content-tabs-prev">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-left"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="btn-circle__box">
+                <button class="btn-circle__btn js-content-tabs-next">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-tabs__item js-tabs-item" data-tab="photo">
+          <div class="swiper js-slider-desc">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="adaptive-box">
+                  <div class="adaptive-item">
+                    <img src="img/projects/projects-2.jpg" alt="" class="content-tabs__img">
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="swiper-slide">
+                <div class="adaptive-box">
+                  <div class="adaptive-item">
+                    <img src="img/projects/projects-1.jpg" alt="" class="content-tabs__img">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-tabs__pagination btn-circle__wrapper">
+              <div class="btn-circle__box">
+                <button class="btn-circle__btn js-content-tabs-prev">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-left"></use>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="btn-circle__box">
+                <button class="btn-circle__btn js-content-tabs-next">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="news__list">
+      <h2 class="page-subtitle">Статьи по теме</h2>
+
+      <div class="news__wrapper">
+        <div class="news__item news__item-33">
+          <a href="/folder/projects-detail-2.html" class="news__top">
+            <img src="img/content/content-13.jpg" alt="" class="news__img">
+          </a>
+
+          <div class="news__middle">
+            <a href="/folder/projects-detail-2.html" class="news__title">Зоопарк работает на час дольше</a>
+          </div>
+        </div>
+
+        <div class="news__item news__item-33">
+          <a href="/folder/projects-detail-2.html" class="news__top">
+            <img src="img/content/content-14.jpg" alt="" class="news__img">
+          </a>
+
+          <div class="news__middle">
+            <a href="/folder/projects-detail-2.html" class="news__title">Возобновляем индивидуальные экскурсии</a>
+          </div>
+        </div>
+
+        <div class="news__item news__item-33">
+          <a href="/folder/projects-detail-2.html" class="news__top">
+            <img src="img/content/content-10.jpg" alt="" class="news__img">
+          </a>
+
+          <div class="news__middle">
+            <a href="/folder/projects-detail-2.html" class="news__title">Легендарному директору зоопарка Людмиле Ворониной 85!</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="page-navigation">
+        <button type="button" class="page-navigation__btn page-navigation__arrow">
+          <svg>
+            <use xlink:href="img/sprite.svg#arrow-left"></use>
+          </svg>
+        </button>
+
+        <button type="button" class="page-navigation__btn active">
+          1
+        </button>
+
+        <button type="button" class="page-navigation__btn">
+          2
+        </button>
+
+        <button type="button" class="page-navigation__btn">
+          3
+        </button>
+
+        <button type="button" class="page-navigation__btn">
+          4
+        </button>
+
+        <button type="button" class="page-navigation__btn">
+          5
+        </button>
+
+        <button type="button" class="page-navigation__btn page-navigation__arrow">
+          <svg>
+            <use xlink:href="img/sprite.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+  </div>
+  @@include('include_html/footer.html')
